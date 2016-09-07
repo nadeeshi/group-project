@@ -45,20 +45,23 @@
                         <div class="display">
 
                             <form action="insertAdmin.php" method="post" name="insertform">
-                                <p>
-                                    <label for="name" id="preinput"> USER NAME : </label>
+
+
+                                 <p>
+                                    <label for="name" id="preinput"> USER NAME : </label><br>
+
                                     <input type="text" name="username" required placeholder="Enter admin name" id="inputid"/>
                                 </p>
                                 <p>
-                                    <label  for="email" id="preinput"> EMAIL ID : </label>
+                                    <label  for="email" id="preinput"> EMAIL ID : </label><br>
                                     <input type="email" name="usermail" required placeholder="Enter Email" id="inputid" />
                                 </p>
                                 <p>
-                                    <label for="mobile" id="preinput"> MOBILE NUMBER : </label>
+                                    <label for="mobile" id="preinput"> MOBILE NUMBER : </label><br>
                                     <input type="text" name="usermobile" required placeholder="Enter mobile number" id="inputid" />
                                 </p>
                                 <p>
-                                    <label  for="password" id="preinput"> PASSWORD : </label>
+                                    <label  for="password" id="preinput"> PASSWORD : </label><br>
                                     <input type="password" name="password" required placeholder="Enter password" id="inputid" />
                                 </p>
 
