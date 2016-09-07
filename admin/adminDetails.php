@@ -39,8 +39,40 @@
                 <div class="panel-body">
                      <h4 style="color: #cc006a">Add New Admin</h4>
                     <div style="margin-top: 20px;">
-                     <?php include("newAdmin.php")?>
 
+
+                        <!--add new Admin--------------------------------------------------------->
+                        <div class="display">
+
+                            <form action="insertAdmin.php" method="post" name="insertform">
+                                <p>
+                                    <label for="name" id="preinput"> USER NAME : </label>
+                                    <input type="text" name="username" required placeholder="Enter admin name" id="inputid"/>
+                                </p>
+                                <p>
+                                    <label  for="email" id="preinput"> EMAIL ID : </label>
+                                    <input type="email" name="usermail" required placeholder="Enter Email" id="inputid" />
+                                </p>
+                                <p>
+                                    <label for="mobile" id="preinput"> MOBILE NUMBER : </label>
+                                    <input type="text" name="usermobile" required placeholder="Enter mobile number" id="inputid" />
+                                </p>
+                                <p>
+                                    <label  for="password" id="preinput"> PASSWORD : </label>
+                                    <input type="password" name="password" required placeholder="Enter password" id="inputid" />
+                                </p>
+
+
+
+                                <p>
+                                    <input type="submit" name="send" value="Submit" id="inputid1"  />
+                                </p>
+                            </form>
+
+                        </div>
+
+
+                   <!--close new admin------------------------------------------------------------------------------->
 
 
 
@@ -67,7 +99,43 @@
                  </div>
 
                 <div class="panel-body">
-                    <?php include('viewAdmin.php'); ?>
+
+
+             <!--start  viewAdmin---------------------------------------------------------------------->
+                    <?php
+                    include('connect.php');
+                    $select=mysql_query("SELECT * FROM admin_details order by id desc");
+                    $i=1;
+                    while($userrow=mysql_fetch_array($select))
+                    {
+                        $id=$userrow['id'];
+                        $username=$userrow['username'];
+                        $usermail=$userrow['emailid'];
+                        $usermobile=$userrow['mobileno'];
+                        $created=$userrow['created']
+                        ?>
+
+                        <div class="display">
+                            <p> USER NAME : <span style="color: #125acd"><?php echo $username; ?></span>
+                                <a href="deleteAdmin.php?id=<?php echo $id; ?>"
+                                   onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                    <span class="delete" title="Delete" style="color: #ff0084"> X </span></a>
+                            </p>
+                            <br />
+                            <p> EMAIL ID : <span style="color: #125acd"><?php echo $usermail; ?></span>
+                                <a href="editAdmin.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> E </span></a>
+                            </p>
+                            <br />
+                            <p> MOBILE NO : <span style="color: #125acd"><?php echo $usermobile; ?></span>
+                            </p>
+                            <br />
+                            <p> CREATED ON : <span style="color: #125acd"><?php echo $created; ?></span>
+                            </p>
+                            <br />
+                        </div>
+                    <?php } ?>
+              <!--close viewAdmin---------------------------------------------------------------->
+
 
                  </div>
               </div>

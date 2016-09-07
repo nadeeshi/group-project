@@ -39,8 +39,30 @@
                     <div class="panel-body">
                         <h4>Add New Researchers</h4>
                         <div style="margin-top: 20px;">
-                            <?php include("newResearchers.php")?>
 
+                    <!--add new Researcher-------------------------------------------------------->
+                            <div class="display">
+
+                                <form action="insertResearchers.php" method="post" name="insertform">
+                                    <p>
+                                        <label for="name" id="preinput"> RESEARCHER NAME : </label>
+                                        <input type="text" name="username" required placeholder="Enter your name" id="inputid"/>
+                                    </p>
+                                    <p>
+                                        <label  for="email" id="preinput"> EMAIL ID : </label>
+                                        <input type="email" name="usermail" required placeholder="Enter your Email" id="inputid" />
+                                    </p>
+                                    <p>
+                                        <label for="mobile" id="preinput"> MOBILE NUMBER : </label>
+                                        <input type="text" name="usermobile" required placeholder="Enter your mobile number" id="inputid" />
+                                    </p>
+                                    <p>
+                                        <input type="submit" name="send" value="Submit" id="inputid1"  />
+                                    </p>
+                                </form>
+
+                            </div>
+                   <!---close add new Researcher--------------------------------------------------------->
 
 
 
@@ -67,7 +89,43 @@
                     </div>
 
                     <div class="panel-body">
-                        <?php include('viewResearchers.php'); ?>
+
+                        <!-----view Researchers details------------------------------------------>
+
+                        <?php
+                        include('connect.php');
+                        $select=mysql_query("SELECT * FROM researcher_details order by id desc");
+                        $i=1;
+                        while($userrow=mysql_fetch_array($select))
+                        {
+                            $id=$userrow['id'];
+                            $username=$userrow['username'];
+                            $usermail=$userrow['emailid'];
+                            $usermobile=$userrow['mobileno'];
+                            $created=$userrow['created']
+                            ?>
+
+                            <div class="display">
+                                <p> RESEARCHER NAME : <span><?php echo $username; ?></span>
+                                    <a href="deleteResearchers.php?id=<?php echo $id; ?>"
+                                       onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                        <span class="delete" title="Delete"> X </span></a>
+                                </p>
+                                <br />
+                                <p> EMAIL ID : <span><?php echo $usermail; ?></span>
+                                    <a href="editResearchers.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> E </span></a>
+                                </p>
+                                <br />
+                                <p> MOBILE NO : <span><?php echo $usermobile; ?></span>
+                                </p>
+                                <br />
+                                <p> CREATED ON : <span><?php echo $created; ?></span>
+                                </p>
+                                <br />
+                            </div>
+                        <?php } ?>
+
+                        <!---close new researcher------------------------------------------------------>
 
                     </div>
                 </div>
