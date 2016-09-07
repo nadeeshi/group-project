@@ -222,24 +222,24 @@ require_once('auth.php');
     <div class="col-md-4">
         <div class="main-box mb-red">
             <a href="#">
-                <i class="fa fa-bolt fa-5x"></i>
-                <h5> 230 different type of bats</h5>
+
+                <h3> 230  bats</h3>
             </a>
         </div>
     </div>
     <div class="col-md-4">
         <div class="main-box mb-dull">
             <a href="#">
-                <i class="fa fa-plug fa-5x"></i>
-                <h5>3 Admin</h5>
+
+                <h3>3 Admin</h3>
             </a>
         </div>
     </div>
     <div class="col-md-4">
         <div class="main-box mb-pink">
             <a href="#">
-                <i class="fa fa-dollar fa-5x"></i>
-                <h5>20 Researchers</h5>
+
+                <h3>20 Researchers</h3>
             </a>
         </div>
     </div>
@@ -254,40 +254,85 @@ require_once('auth.php');
 
 <div class="row">
     <div class="col-md-12">
-        
 
 
-            </div>
+
+                    <div class="col-md-12">
+                        <h1 style="color: #500a6f ;font-size: 20px"><b>List Of Research Details</b></h1>
+
+                    </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                View data from the database
+                            </div>
+
+                            <div class="panel-body">
+                                <h4>view  Details of Bats</h4>
+                                <div style="margin-top: 20px;">
+
+                                    <?php
+                                    include('connect.php');
+                                    $select=mysql_query("SELECT * FROM bats_details order by id desc");
+                                    $i=1;
+                                    while($userrow=mysql_fetch_array($select))
+                                    {
+                                        $id=$userrow['id'];
+                                        $scientificName=$userrow['scientificName'];
+                                        $kingdom=$userrow['kingdom'];
+                                        $phylum=$userrow['phylum'];
+                                        $created=$userrow['created']
+                                        ?>
+
+                                        <div class="display">
+                                            <p style="color: #cc006a"> SCIENTIFIC NAME : <span style="color: #080808"><?php echo $scientificName; ?></span>
+                                                <a href="viewBats.php?id=<?php echo $id; ?>">
+                                                    <span class="view" title="View"> View </span></a>
+
+                                                <a href="editBats.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a>
+
+                                                <a href="deleteBats.php?id=<?php echo $id; ?>"
+                                                   onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                                    <span class="delete" title="Delete"> Delete </span></a>
+
+                                            </p>
+
+                                            <br />
+                                            <p> Created On : <span><?php echo $created; ?></span>
+                                            </p>
+                                            <br />
+                                        </div>
+                                    <?php } ?>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
 
         </div>
-        <!-- /. ROW  -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- /. PAGE INNER  -->
+        </div>
+    </div>
+    </div>
+    </div>
 </div>
-<!-- /. PAGE WRAPPER  -->
-</div>
-<!-- /. WRAPPER  -->
-
-
-
 
 <div id="footer-sec"><b>Group 23-UCSC Group Project</b>
 </div>
-</div>
-
-
-
-
-
 </body>
 </html>
+
+
+
+
+

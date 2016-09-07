@@ -17,13 +17,13 @@
 
     }
 .mb-dull {
-    background-color:#8F8F2C;
+    background-color:#ce8483;
 }
 .mb-red {
-    background-color:#d36f2e;
+    background-color:#a94442;
 }
 .mb-pink {
-    background-color:#FF2F71;
+    background-color:#843534;
 }
     .main-box h5 {
         font-size:16px;
@@ -45,7 +45,7 @@
     border: solid transparent;
     content: " ";
     position: absolute;
-    border-top-color: #6792d5;
+    border-top-color: #424242;
     border-width: 15px;
     margin-left: -15px;
    
@@ -59,7 +59,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     position: relative;
-    border: 1px solid #6792d5;
+    border: 1px solid #424242;
     font-size:14px;
    
 }
@@ -88,7 +88,7 @@
 }
 
 .chat-widget-name-left {
-    color: #6792d5;
+    color: #424242;
     margin-top: 30px;
     margin-left: 60px;
     text-align:left;
@@ -113,7 +113,7 @@
     =============================================*/
 #reviews {
     min-height:180px;
-    background-color:#64A2DB;
+    background-color:#424242;
 	padding:15px;
 }
 #reviews h4 {
