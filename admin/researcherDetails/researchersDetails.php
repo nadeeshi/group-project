@@ -44,21 +44,21 @@
                             <div class="display">
 
                                 <form action="insertResearchers.php" method="post" name="insertform">
-                                    <p>
-                                        <label for="name" id="preinput"> RESEARCHER NAME : </label><br>
-                                        <input type="text" name="username" required placeholder="Enter your name" id="inputid"/>
-                                    </p>
-                                    <p>
-                                        <label  for="email" id="preinput"> EMAIL ID : </label><br>
-                                        <input type="email" name="usermail" required placeholder="Enter your Email" id="inputid" />
-                                    </p>
-                                    <p>
-                                        <label for="mobile" id="preinput"> MOBILE NUMBER : </label><br>
-                                        <input type="text" name="usermobile" required placeholder="Enter your mobile number" id="inputid" />
-                                    </p>
-                                    <p>
+                                    <div class="col-xs-12">
+                                        <label for="name" id="preinput" class="col-xs-5"> RESEARCHER NAME : </label>
+                                        <input type="text" name="username" required placeholder="Enter your name" id="inputid" class="col-xs-7"/>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <label  for="email" id="preinput" class="col-xs-5"> EMAIL ID : </label>
+                                        <input type="email" name="usermail" required placeholder="Enter your Email" id="inputid" class="col-xs-7"/>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <label for="mobile" id="preinput" class="col-xs-5"> MOBILE NUMBER : </label>
+                                        <input type="text" name="usermobile" required placeholder="Enter your mobile number" id="inputid" class="col-xs-7"/>
+                                    </div>
+                                    <div class="col-xs-12">
                                         <input type="submit" name="send" value="Submit" id="inputid1"  />
-                                    </p>
+                                    </div>
                                 </form>
 
                             </div>

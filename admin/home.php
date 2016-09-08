@@ -63,7 +63,7 @@ require_once('auth.php');
         <a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
         <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
         <!-- <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a> -->
-        <a href="index.php">logout</a></p>
+        <a href="index.php" class="logout">logout</a></p>
 
     </div>
 </nav>
@@ -154,14 +154,14 @@ require_once('auth.php');
 
 
             <li>
-                <a href="#"><i class="fa fa-bicycle "></i>Login Forms <span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-bicycle "></i>Bats Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
 
                     <li>
-                        <a href="form.html"><i class="fa fa-desktop "></i>Basic Login Form</a>
+                        <a href="batsDetails/listOfBats.php"><i class="fa fa-desktop "></i>List of Bats</a>
                     </li>
                     <li>
-                        <a href="newAccountt.php"><i class="fa fa-code "></i>Create New Account Form</a>
+                        <a href="batsDetails/newBat.php"><i class="fa fa-code "></i>Add New Bats</a>
                     </li>
 
 

@@ -234,4 +234,15 @@ ul#filters {
 		float:left;
 		overflow:hidden;
 	}
-	
+
+    #inputid {
+        margin-top: 10px;
+        border-radius: 5px;
+}
+
+    #preinput {
+        margin-top: 10px;
+}
+    .logout{
+        color: #ffffff !important;
+}
