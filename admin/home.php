@@ -272,7 +272,7 @@ require_once('auth.php');
                             </div>
 
                             <div class="panel-body">
-                                <h4>view  Details of Bats</h4>
+                                <h4>view  Details of Research</h4>
                                 <div style="margin-top: 20px;">
 
                                     <?php

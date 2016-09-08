@@ -48,97 +48,97 @@
 
                                     <div class="col-xs-12">
                                         <label for="scientificName" id="preinput" class="col-xs-5"> SCIENTIFIC NAME : </label>
-                                        <input type="text" style="width: 500px" name="scientificName" required placeholder="Enter bat  name" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="scientificName" required placeholder="Enter bat  name" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="kingdom" id="preinput" class="col-xs-5"> KINGDOM : </label>
-                                        <input type="text" style="width: 500px" name="kingdom"  required placeholder="Enter kingdom name" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="kingdom"  required placeholder="Enter kingdom name" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="phylum" id="preinput" class="col-xs-5"> PHYLUM : </label>
-                                        <input type="text" style="width: 500px" name="phylum"  placeholder="Enter phylum" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="phylum"  placeholder="Enter phylum" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="class" id="preinput" class="col-xs-5"> CLASS : </label>
-                                        <input type="text" style="width: 500px" name="class"  placeholder="Enter class" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="class"  placeholder="Enter class" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="orderr" id="preinput" class="col-xs-5"> ORDER : </label>
-                                        <input type="text" style="width: 500px" name="orderr"  placeholder="Enter order" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="orderr"  placeholder="Enter order" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="genus" id="preinput" class="col-xs-5"> GENUS : </label>
-                                        <input type="text" style="width: 500px" name="genus" placeholder="Enter genus" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="genus" placeholder="Enter genus" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="family" id="preinput" class="col-xs-5"> Family : </label>
-                                        <input type="text" style="width: 500px" name="family" required placeholder="Enter family" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="family" required placeholder="Enter family" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="subFamily" id="preinput" class="col-xs-5"> SUB FAMILY : </label>
-                                        <input type="text" style="width: 500px" name="subFamily"  placeholder="Enter subfamily" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="subFamily"  placeholder="Enter subfamily" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label  for="speciesAuthority" id="preinput" class="col-xs-5"> SPECIES AUTHORITY : </label>
-                                        <input type="text" style="width: 500px" name="speciesAuthority"  placeholder="Enter species authority" id="inputid" class="col-xs-7"/>
+                                        <input type="text"  name="speciesAuthority"  placeholder="Enter species authority" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="commonNames" id="preinput" class="col-xs-5"> COMMON NAMES : </label>
-                                        <input type="text" style="width: 500px" name="commonNames"  placeholder="Enter common names" id="inputid" class="col-xs-7"/>
+                                        <textarea style="height: 200px" name="commonNames"  placeholder="Enter common names" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="synonyms" id="preinput" class="col-xs-5"> SYNONYMS : </label>
-                                        <input type="text" style="width: 500px" name="synonyms"  placeholder="Enter synonyms" id="inputid" class="col-xs-7"/>
+                                        <textarea type="text" style="height: 200px" name="synonyms"  placeholder="Enter synonyms" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="redListCategory" id="preinput" class="col-xs-5"> RED LIST CATEGORY : </label>
-                                        <input type="text" style="width: 500px" name="redListCategory"  placeholder="Enter red list category" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="redListCategory"  placeholder="Enter red list category" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="distribution" id="preinput" class="col-xs-5"> Distribution : </label>
-                                        <input type="text" style="width: 500px" name="distribution"  placeholder="Enter distribution" id="inputid" class="col-xs-7"/>
+                                        <textarea type="text"  style="height: 200px" name="distribution"  placeholder="Enter distribution" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="oioCountries" id="preinput" class="col-xs-5"> OCCURRENCES IN OTHER COUNTRIES  : </label>
-                                        <input type="text" style="width: 500px" name="oioCountries"  placeholder="Enter Occurrences in other countries" id="inputid" class="col-xs-7"/>
+                                        <textarea type="text"  style="height: 200px" name="oioCountries"  placeholder="Enter Occurrences in other countries" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="population" id="preinput" class="col-xs-5"> POPULATION(L) : </label>
-                                        <input type="text" style="width: 500px" name="population"  placeholder="Enter population" id="inputid" class="col-xs-7"/>
+                                        <textarea type="text"  style="height: 200px" name="population"  placeholder="Enter population" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="roosts" id="preinput" class="col-xs-5"> ROOSTS : </label>
-                                        <input type="text" style="width: 500px" name="roosts"  placeholder="Enter roosts" id="inputid" class="col-xs-7"/>
+                                        <input type="text"   name="roosts"  placeholder="Enter roosts" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="commonFood" id="preinput" class="col-xs-5"> COMMON FOOD : </label>
-                                        <input type="text" style="width: 500px" name="commonFood"  placeholder="Enter common food" id="inputid" class="col-xs-7"/>
+                                        <textarea type="text"  style="height: 200px" name="commonFood"  placeholder="Enter common food" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="bibliography" id="preinput" class="col-xs-5"> BIBLIOGRAPHY : </label>
-                                        <input type="text" style="width: 500px" name="bibliography"  placeholder="Enter bibliography" id="inputid" class="col-xs-7"/>
+                                        <textarea type="text"  style="height: 300px" name="bibliography"  placeholder="Enter bibliography" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <label for="conservation" id="preinput" class="col-xs-5"> CONSERVATION ACTION : </label>
-                                        <input type="text" style="width: 500px" name="conservation"  placeholder="Enter conservation action" id="inputid" class="col-xs-7"/>
+                                        <textarea type="text"  style="height: 250px" name="conservation"  placeholder="Enter conservation action" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
 
