@@ -9,14 +9,14 @@
     <title>BatFacts.com</title>
 
     <!-- BOOTSTRAP STYLES-->
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
 
     <!--CUSTOM BASIC STYLES-->
-    <link href="css/basic.css" rel="stylesheet" />
+    <link href="../css/basic.css" rel="stylesheet" />
     <!--CUSTOM MAIN STYLES-->
-    <link href="css/custom.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
 
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -27,13 +27,13 @@
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="../js/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->
-    <script src="js/bootstrapjs.js"></script>
+    <script src="../js/bootstrapjs.js"></script>
     <!-- METISMENU SCRIPTS -->
-    <script src="js/jquery.metisMenu.js"></script>
+    <script src="../js/jquery.metisMenu.js"></script>
     <!-- CUSTOM SCRIPTS -->
-    <script src="js/custom.js"></script>
+    <script src="../js/custom.js"></script>
 
 
 
@@ -78,7 +78,7 @@
         <ul class="nav" id="main-menu">
             <li>
                 <div class="user-img-div">
-                    <img src="img/2.jpg" class="img-thumbnail" />
+                    <img src="../img/2.jpg" class="img-thumbnail" />
 
                     <div class="inner-text">
                         Nadee Sansari
@@ -92,7 +92,7 @@
 
 
             <li>
-                <a class="active-menu" href="home.php"><i class="fa fa-dashboard "></i>Dashboard</a>
+                <a class="active-menu" href="../home.php"><i class="fa fa-dashboard "></i>Dashboard</a>
             </li>
 
 
@@ -123,7 +123,7 @@
                 <a href="#"><i class="fa fa-yelp "></i>Reaserch Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="researchDetails/listOfResearch.php"><i class="fa fa-coffee"></i>list of Research</a>
+                        <a href="../researchDetails/listOfResearch.php"><i class="fa fa-coffee"></i>list of Research</a>
                     </li>
                     <li>
                         <a href="pricing.html"><i class="fa fa-flash "></i>More details of Research</a>
@@ -132,7 +132,7 @@
                         <a href="component.html"><i class="fa fa-key "></i>Components</a>
                     </li>
                     <li>
-                        <a href="researchDetails/researchDetails.php"><i class="fa fa-send "></i>Add New Research Details</a>
+                        <a href="../researchDetails/researchDetails.php"><i class="fa fa-send "></i>Add New Research Details</a>
                     </li>
 
                 </ul>
@@ -154,10 +154,10 @@
                 <ul class="nav nav-second-level">
 
                     <li>
-                        <a href="batsDetails/listOfBats.php"><i class="fa fa-desktop "></i>List of Bats</a>
+                        <a href="../batsDetails/listOfBats.php"><i class="fa fa-desktop "></i>List of Bats</a>
                     </li>
                     <li>
-                        <a href="batsDetails/newBat.php"><i class="fa fa-code "></i>Add New Bats</a>
+                        <a href="../batsDetails/newBat.php"><i class="fa fa-code "></i>Add New Bats</a>
                     </li>
 
 
