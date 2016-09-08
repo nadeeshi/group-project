@@ -92,7 +92,7 @@
 
 
             <li>
-                <a class="active-menu" href="home.php"><i class="fa fa-dashboard "></i>Dashboard</a>
+                <a class="active-menu" href="../home.php"><i class="fa fa-dashboard "></i>Dashboard</a>
             </li>
 
 

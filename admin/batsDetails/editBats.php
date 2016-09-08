@@ -79,7 +79,7 @@ ob_end_flush();
                     </div>
 
                     <div class="panel-body">
-                        <h4 style="color: #cc006a">Add New Bat</h4>
+                        <h4 style="color: #cc006a">Update Bat details</h4>
                         <div style="margin-top: 20px;">
                             <?php
                             if(isset($_GET['id']))
@@ -112,115 +112,116 @@ ob_end_flush();
                                     ?>
                                     <div class="display">
                                         <form action="" method="post" name="insertform">
-                                            <p>
-                                                <label for="name"  id="preinput"> SCIENTIFIC NAME : </label>
-                                                <input type="text" style="width: 500px" name="scientificName" required placeholder="Enter  name"
-                                                       value="<?php echo $scientificName; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="kingdom"  id="preinput"> KINGDOM : </label>
-                                                <input type="text" style="width: 500px" name="kingdom" required placeholder="Enter  kingdom"
-                                                       value="<?php echo $kingdom; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label for="phylum" id="preinput"> PHYLUM : </label>
-                                                <input type="text" style="width: 500px" name="phylum"  placeholder="Enter  phylum"
-                                                       value="<?php echo $phylum; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="class"  id="preinput"> CLASS : </label>
-                                                <input type="text" style="width: 500px" name="class"  placeholder="Enter class"
-                                                       value="<?php echo $class; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="orderr"  id="preinput"> ORDER : </label>
-                                                <input type="text" style="width: 500px" name="orderr"  placeholder="Enter order"
-                                                       value="<?php echo $orderr; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="genus"  id="preinput"> GENUS : </label>
-                                                <input type="text" style="width: 500px" name="genus"  placeholder="Enter genus"
-                                                       value="<?php echo $genus; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="family"  id="preinput"> FAMILY : </label>
-                                                <input type="text" style="width: 500px" name="family" required placeholder="Enter family"
-                                                       value="<?php echo $family; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="subFamily"  id="preinput"> SUB FAMILY : </label>
-                                                <input type="text" style="width: 500px" name="subFamily"  placeholder="Enter subFamily"
-                                                       value="<?php echo $subFamily; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="speciesAuthority"  id="preinput"> SPECIES AUTHORITY : </label>
-                                                <input type="text" style="width: 500px" name="speciesAuthority"  placeholder="Enter speciesAuthority"
-                                                       value="<?php echo $speciesAuthority; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="commonNames"  id="preinput"> COMMON NAMES : </label>
-                                                <input type="text" style="width: 500px" name="commonNames"  placeholder="Enter commonNames"
-                                                       value="<?php echo $commonNames; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="synonyms"  id="preinput"> SYNONYMS : </label>
-                                                <input type="text" style="width: 500px" name="synonyms"  placeholder="Enter synonyms"
-                                                       value="<?php echo $synonyms; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="redListCategory"  id="preinput"> RED LIST CATEGORY : </label>
-                                                <input type="text" style="width: 500px" name="redListCategory"  placeholder="Enter redListCategory"
-                                                       value="<?php echo $redListCategory; ?>" id="inputid" />
-                                            </p>
+                                            <div class="col-xs-12">
+                                                <label for="name"  id="preinput" class="col-xs-5"> SCIENTIFIC NAME : </label>
+                                                <input type="text"   name="scientificName" required placeholder="Enter  name"
+                                                       value="<?php echo $scientificName; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="kingdom"  id="preinput" class="col-xs-5"> KINGDOM : </label>
+                                                <input type="text"   name="kingdom" required placeholder="Enter  kingdom"
+                                                       value="<?php echo $kingdom; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label for="phylum" id="preinput" class="col-xs-5"> PHYLUM : </label>
+                                                <input type="text"   name="phylum"  placeholder="Enter  phylum"
+                                                       value="<?php echo $phylum; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="class"  id="preinput" class="col-xs-5"> CLASS : </label>
+                                                <input type="text"   name="class"  placeholder="Enter class"
+                                                       value="<?php echo $class; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="orderr"  id="preinput" class="col-xs-5"> ORDER : </label>
+                                                <input type="text"   name="orderr"  placeholder="Enter order"
+                                                       value="<?php echo $orderr; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="genus"  id="preinput" class="col-xs-5"> GENUS : </label>
+                                                <input type="text"   name="genus"  placeholder="Enter genus"
+                                                       value="<?php echo $genus; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="family"  id="preinput" class="col-xs-5"> FAMILY : </label>
+                                                <input type="text"   name="family" required placeholder="Enter family"
+                                                       value="<?php echo $family; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="subFamily"  id="preinput" class="col-xs-5"> SUB FAMILY : </label>
+                                                <input type="text"   name="subFamily"  placeholder="Enter subFamily"
+                                                       value="<?php echo $subFamily; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="speciesAuthority"  id="preinput" class="col-xs-5"> SPECIES AUTHORITY : </label>
+                                                <input type="text"   name="speciesAuthority"  placeholder="Enter speciesAuthority"
+                                                       value="<?php echo $speciesAuthority; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="commonNames"  id="preinput" class="col-xs-5"> COMMON NAMES : </label>
+                                                <textarea type="text"   style="height: 200px" name="commonNames"  placeholder="Enter commonNames"
+                                                       value="<?php echo $commonNames; ?>" id="inputid" class="col-xs-7"></textarea>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="synonyms"  id="preinput" class="col-xs-5"> SYNONYMS : </label>
+                                                <textarea type="text"   style="height: 200px" name="synonyms"  placeholder="Enter synonyms"
+                                                       value="<?php echo $synonyms; ?>" id="inputid" class="col-xs-7"></textarea>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="redListCategory"  id="preinput" class="col-xs-5"> RED LIST CATEGORY : </label>
+                                                <input type="text"   name="redListCategory"  placeholder="Enter redListCategory"
+                                                       value="<?php echo $redListCategory; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
 
-                                            <p>
-                                                <label  for="distribution"  id="preinput"> DISTRIBUTION : </label>
-                                                <input type="text" style="width: 500px" name="distribution"  placeholder="Enter distribution"
-                                                       value="<?php echo $distribution; ?>" id="inputid" />
-                                            </p>
+                                            <div class="col-xs-12">
+                                                <label  for="distribution"  id="preinput" class="col-xs-5"> DISTRIBUTION : </label>
+                                                <textarea type="text"  style="height: 200px" name="distribution"  placeholder="Enter distribution"
+                                                       value="<?php echo $distribution; ?>" id="inputid" class="col-xs-7"></textarea>
+                                            </div>
 
-                                            <p>
-                                                <label  for="oioCountries"  id="preinput"> OIO COUNTRIES : </label>
-                                                <input type="text" style="width: 500px" name="oioCountries"  placeholder="Enter oioCountries"
-                                                       value="<?php echo $oioCountries; ?>" id="inputid" />
-                                            </p>
+                                            <div class="col-xs-12">
+                                                <label  for="oioCountries"  id="preinput" class="col-xs-5"> OIO COUNTRIES : </label>
+                                                <textarea type="text"  style="height: 200px" name="oioCountries"  placeholder="Enter oioCountries"
+                                                       value="<?php echo $oioCountries; ?>" id="inputid" class="col-xs-7"></textarea>
+                                            </div>
 
-                                            <p>
-                                                <label  for="population"  id="preinput"> POPULATION : </label>
-                                                <input type="text" style="width: 500px" name="population"  placeholder="Enter population"
-                                                       value="<?php echo $population; ?>" id="inputid" />
-                                            </p>
+                                            <div class="col-xs-12">
+                                                <label  for="population"  id="preinput" class="col-xs-5"> POPULATION : </label>
+                                                <textarea type="text"  style="height: 200px" name="population"  placeholder="Enter population"
+                                                       value="<?php echo $population; ?>" id="inputid" class="col-xs-7"></textarea>
+                                            </div>
 
-                                            <p>
-                                                <label  for="roosts"  id="preinput"> ROOSTS : </label>
-                                                <input type="text" style="width: 500px" name="roosts"  placeholder="Enter roosts"
-                                                       value="<?php echo $roosts; ?>" id="inputid" />
-                                            </p>
+                                            <div class="col-xs-12">
+                                                <label  for="roosts"  id="preinput" class="col-xs-5"> ROOSTS : </label>
+                                                <input type="text"   name="roosts"  placeholder="Enter roosts"
+                                                       value="<?php echo $roosts; ?>" id="inputid" class="col-xs-7"/>
+                                            </div>
 
-                                            <p>
-                                                <label  for="commonFood"  id="preinput"> COMMON FOOD : </label>
-                                                <input type="text" style="width: 500px" name="commonFood"  placeholder="Enter commonFood"
-                                                       value="<?php echo $commonFood; ?>" id="inputid" />
-                                            </p>
+                                            <div class="col-xs-12">
+                                                <label  for="commonFood"  id="preinput" class="col-xs-5"> COMMON FOOD : </label>
+                                                <textarea type="text" style="height: 200px"  name="commonFood"  placeholder="Enter commonFood"
+                                                       value="<?php echo $commonFood; ?>" id="inputid" class="col-xs-7"></textarea>
+                                            </div>
 
-                                            <p>
-                                                <label  for="bibliography"  id="preinput"> BIBLIOGRAPHY : </label>
-                                                <input type="text" style="width: 500px" name="bibliography"  placeholder="Enter bibliography"
-                                                       value="<?php echo $bibliography; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="conservation"  id="preinput"> CONSERVATION : </label>
-                                                <input type="text" style="width: 500px" name="conservation"  placeholder="Enter conservation"
-                                                       value="<?php echo $conservation; ?>" id="inputid" />
-                                            </p>
-
-
+                                            <div class="col-xs-12">
+                                                <label  for="bibliography"  id="preinput" class="col-xs-5"> BIBLIOGRAPHY : </label>
+                                                <textarea type="text"  style="height: 300px" name="bibliography"  placeholder="Enter bibliography"
+                                                       value="<?php echo $bibliography; ?>" id="inputid" class="col-xs-7"></textarea>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="conservation"  id="preinput" class="col-xs-5"> CONSERVATION : </label>
+                                                <textarea type="text"   style="height: 250px" name="conservation"  placeholder="Enter conservation"
+                                                       value="<?php echo $conservation; ?>" id="inputid"  class="col-xs-7"></textarea>
+                                            </div>
 
 
 
-                                            <p>
+
+
+                                            <div class="col-xs-12">
+                                                <br>
                                                 <input type="submit" style="width: 300px" name="update" value="Update" id="inputid1" />
-                                            </p>
+                                            </div>
                                         </form>
                                     </div>
                                 <?php } } ?>

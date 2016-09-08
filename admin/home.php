@@ -274,28 +274,27 @@ require_once('auth.php');
                             <div class="panel-body">
                                 <h4>view  Details of Research</h4>
                                 <div style="margin-top: 20px;">
-
                                     <?php
                                     include('connect.php');
-                                    $select=mysql_query("SELECT * FROM bats_details order by id desc");
+                                    $select=mysql_query("SELECT * FROM research_details order by id desc");
                                     $i=1;
                                     while($userrow=mysql_fetch_array($select))
                                     {
                                         $id=$userrow['id'];
-                                        $scientificName=$userrow['scientificName'];
+                                        $researchName=$userrow['researchName'];
                                         $kingdom=$userrow['kingdom'];
                                         $phylum=$userrow['phylum'];
                                         $created=$userrow['created']
                                         ?>
 
                                         <div class="display">
-                                            <p style="color: #cc006a"> SCIENTIFIC NAME : <span style="color: #080808"><?php echo $scientificName; ?></span>
-                                                <a href="viewBats.php?id=<?php echo $id; ?>">
+                                            <p style="color: #cc006a"> RESEARCH NAME : <span style="color: #080808"><?php echo $researchName; ?></span>
+                                                <a href="researchDetails/viewResearch.php?id=<?php echo $id; ?>">
                                                     <span class="view" title="View"> View </span></a>
 
-                                                <a href="editBats.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a>
+                                                <a href="researchDetails/editResearch.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a>
 
-                                                <a href="deleteBats.php?id=<?php echo $id; ?>"
+                                                <a href="researchDetails/deleteResearch.php?id=<?php echo $id; ?>"
                                                    onclick="return confirm('Are you sure you wish to delete this Record?');">
                                                     <span class="delete" title="Delete"> Delete </span></a>
 

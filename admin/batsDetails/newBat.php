@@ -47,12 +47,12 @@
                                 <form action="insertBat.php" method="post" name="insertform">
 
                                     <div class="col-xs-12">
-                                        <label for="scientificName" id="preinput" class="col-xs-5"> SCIENTIFIC NAME : </label>
+                                        <label for="scientificName" id="preinput" class="col-xs-5"> * SCIENTIFIC NAME : </label>
                                         <input type="text"   name="scientificName" required placeholder="Enter bat  name" id="inputid" class="col-xs-7"/>
                                     </div>
 
                                     <div class="col-xs-12">
-                                        <label for="kingdom" id="preinput" class="col-xs-5"> KINGDOM : </label>
+                                        <label for="kingdom" id="preinput" class="col-xs-5"> * KINGDOM : </label>
                                         <input type="text"   name="kingdom"  required placeholder="Enter kingdom name" id="inputid" class="col-xs-7"/>
                                     </div>
 
@@ -77,7 +77,7 @@
                                     </div>
 
                                     <div class="col-xs-12">
-                                        <label for="family" id="preinput" class="col-xs-5"> Family : </label>
+                                        <label for="family" id="preinput" class="col-xs-5"> * FAMILY : </label>
                                         <input type="text"   name="family" required placeholder="Enter family" id="inputid" class="col-xs-7"/>
                                     </div>
 
@@ -107,7 +107,7 @@
                                     </div>
 
                                     <div class="col-xs-12">
-                                        <label for="distribution" id="preinput" class="col-xs-5"> Distribution : </label>
+                                        <label for="distribution" id="preinput" class="col-xs-5"> DISTRIBUTION : </label>
                                         <textarea type="text"  style="height: 200px" name="distribution"  placeholder="Enter distribution" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
@@ -137,8 +137,8 @@
                                     </div>
 
                                     <div class="col-xs-12">
-                                        <label for="conservation" id="preinput" class="col-xs-5"> CONSERVATION ACTION : </label>
-                                        <textarea type="text"  style="height: 250px" name="conservation"  placeholder="Enter conservation action" id="inputid" class="col-xs-7"></textarea>
+                                        <label for="conservation" id="preinput" class="col-xs-5"> * CONSERVATION ACTION : </label>
+                                        <textarea type="text"  style="height: 250px" name="conservation" required placeholder="Enter conservation action" id="inputid" class="col-xs-7"></textarea>
                                     </div>
 
 
