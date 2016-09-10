@@ -9,6 +9,104 @@
     <title>BatFacts.com</title>
 
 
+    <script>
+        function validateForm(){
+         var uname = document.forms["myForm"]["username"].value;
+         var umail = document.forms["myForm"]["usermail"].value;
+         var umobile = document.forms["myForm"]["usermobile"].value;
+         var upassword = document.forms["myForm"]["password"].value;
+
+
+         if(allLetter(uname)){
+
+            if(validateEmail(umail)){
+
+                if(validateMobile(umobile)){
+
+                    if(validatePassword(upassword)){
+
+                        $('[name="myForm"]').submit();
+
+                    }else{
+                        return false;
+                    }
+
+                }else{
+                    return false;
+                }
+
+            }else{
+                return false;
+            }
+
+         }else{
+             return false;
+         }
+
+
+         }
+
+         function allLetter( uname) {
+
+            var letters = /^[A-Za-z]+$/;
+            if(uname.match(letters)){
+
+
+            }else{
+                alert("Fullname must have alphabet characters only");
+                return false;
+            }
+         }
+
+         function validateEmail(umail) {
+
+
+         var letters = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+         if(umail.match(letters)){
+
+
+         }else{
+         alert("You have entered an invalid email address!");
+         return false;
+
+         }
+         }
+
+         function validateMobile( umobile){
+
+            var letters = /^[0-9]+$/;
+            if(umobile.match(letters)){
+
+
+            }else{
+                alert("You have entered an invalid phone numbers!");
+                return false;
+
+            }
+
+         }
+
+         function  validatePassword( upassword){
+
+
+         var letters = /^[0-9a-zA-Z]+$/;
+         if(upassword.match(letters)){
+
+
+         }else{
+            alert("You have entered an invalid password !");
+            return false;
+
+         }
+         }
+
+
+
+    </script>
+
+
+
+
 </head>
 
 
@@ -43,8 +141,36 @@
 
                             <!--add new Admin--------------------------------------------------------->
                             <div class="display">
+                                <form name="myForm" action="insertAdmin.php"  method="post">
 
-                                <form action="insertAdmin.php" method="post" name="insertform">
+
+                                     <div class="col-xs-12">
+                                         <label for="name" id="preinput" class="col-xs-5"> USER NAME : </label>
+
+                                         <input type="text" name="username" required placeholder="Enter admin name" id="inputid" class="col-xs-7"/>
+                                     </div>
+                                     <div class="col-xs-12">
+                                         <label  for="email" id="preinput" class="col-xs-5"> EMAIL ID : </label>
+                                         <input type="email" name="usermail" required placeholder="Enter Email" id="inputid" class="col-xs-7"/>
+                                     </div>
+
+                                     <div class="col-xs-12">
+                                         <label for="mobile" id="preinput" class="col-xs-5"> PHONE NUMBER : </label>
+                                         <input type="text" name="usermobile" required placeholder="Enter mobile number" id="inputid" class="col-xs-7"/>
+                                     </div>
+
+                                     <div class="col-xs-12">
+                                         <label  for="password" id="preinput" class="col-xs-5"> PASSWORD : </label>
+                                         <input type="password" name="password" required placeholder="Enter password" id="inputid" class="col-xs-7"/>
+                                     </div>
+
+
+                                     <!--<input type="submit" value="Submit">-->
+                                    <button onclick="validateForm()"> Submit </button>
+                                 </form>
+
+
+                                <!--<form action="insertAdmin.php"  method="post" name="insertform" >
 
 
                                     <div class="col-xs-12">
@@ -68,9 +194,9 @@
 
 
                                     <div class="col-xs-12">
-                                        <input type="submit" name="send" value="Submit" id="inputid1"  />
+                                        <input type="submit" name="submit" value="Submit" id="inputid1"  />
                                     </div>
-                                </form>
+                                </form>-->
 
                             </div>
 

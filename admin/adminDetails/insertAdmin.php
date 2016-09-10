@@ -2,8 +2,6 @@
 ob_start();
 include("connect.php");
 
-if(isset($_POST['send'])!="")
-{
     $username=mysql_real_escape_string($_POST['username']);
     $usermail=mysql_real_escape_string($_POST['usermail']);
     $usermobile=mysql_real_escape_string($_POST['usermobile']);
@@ -24,6 +22,6 @@ if(isset($_POST['send'])!="")
         $errormsg="Something went wrong, Try again";
         echo "<script type='text/javascript'>alert('$errormsg');</script>";
     }
-}
+
 ob_end_flush();
 ?>
